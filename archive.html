@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bewannacry Archiv</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PS3 Downloader</h1>
+        <nav>
+            <a href="PS3 Downloader.exe" download class="download-button">Download</a>
+            <button id="mode-toggle" class="mode-button">Dark Mode</button>
+        </nav>
+    </header>
+
+    <footer>
+        <p>&copy; 2025 Archiv. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById('mode-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            toggleButton.textContent = document.body.classList.contains('dark-mode') ? 'Standard Mode' : 'Dark Mode';
+        });
+    </script>
+</body>
+</html>
+
